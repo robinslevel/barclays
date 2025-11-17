@@ -1,0 +1,683 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+
+/* colors */
+:root {
+	--bgc: #ffffff;
+	/* menu colors */
+	/* spans */
+	--linkspans: #006de3;
+	--linkspansactive: red;
+	--lineaftermenu:#ccc;
+	/* menu 2 */
+--backgrli:white;
+
+	--headerl1: #272727;
+	--headerl2: #006de3;
+
+	/* login button */
+	--login: #006de3;
+	--login2: #005bbe;
+	--bgsection1: rgb(0, 18, 118);
+	--bgsection2: #f6f6f6;
+
+	--pc2: #515151;
+	--h23: #272727;
+
+	--s4:#1a2142;
+	--footerspan:#E2E2E2;
+	--section2h2:#affdfd;
+	--section2a:#affdfd;
+	--section2bg:#007481;
+	--section3bold:#515151;
+	--section3pcolor:#515151;
+	--fillsection4:#272727;
+	--h3section4:#272727;
+	--section4button:#006de3;
+	--section5h2:#272727;
+	--section5p:#515151;
+	--section6bg:#f6f6f6;
+	--section6h4:#272727;
+	--section6p:#515151;
+	--section7h2-p:#515151;
+	--section8:#f6f6f6;
+	--section8h2:#272727;
+	--sectipon8p:#515151;
+	/* upside down color */
+	--section9bg:#f6f6f6;
+	--section9h2:#272727;
+	--section9p:#515151;
+	--sectiona:#006de3;
+	--section10bg:#f6f6f6;
+}
+
+
+
+/****.    Left curly bracket {: ⌥ Option + Shift + 8
+Right curly bracket }: ⌥ Option + Shift + 9.     ****/
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--color-text: #111;
+	--color-background: #eee;
+}
+
+@media (min-width: 768px) {
+	main section:first-of-type button {
+		display: inline-block;
+		width: auto;
+		margin-inline: 0.5rem;
+	}
+
+	main section:first-of-type a {
+		display: inline-block;
+		width: auto;
+	}
+
+	main>section:first-of-type {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+
+/* <body id="b2"> */
+
+/* main line on the top */
+#b2 main{
+	border-top: solid;
+	border-color: var(--lineaftermenu);
+	border-width: 2px;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+
+}
+
+/* start section  1*/
+#b2 main>section:first-of-type {
+	display: grid;
+	gap: 0.5rem;
+	background-color: rgb(0, 18, 118);
+	padding: 1rem;
+	border-width: 0.6em 0.8em;
+	border-color: #00AEEF;
+	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-bottom: 0;
+}
+
+main section:first-of-type p:nth-of-type(1) {
+	/* grid-column: 1 / 2; */
+	grid-row: 1 / 2;
+}
+
+main section:first-of-type h2 {
+	margin-bottom: 0.2em;
+	margin-top: -0.1em;
+}
+
+main section:first-of-type a {
+	justify-self: center;
+	text-align: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--bgc);
+	width: 80%;
+	transition: all 0.3s ease;
+	margin-top: 1em;
+	color: var(--bgc);
+	text-decoration: none;
+
+}
+/* strong is bold */
+strong{
+	font-family:effrab, Arial, Helvetica, sans-serif;
+}
+main section:first-of-type button {
+	justify-self: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--bgc);
+	width: 80%;
+	transition: all 0.3s ease;
+	margin-top: 1em;
+	color: var(--bgsection1);
+	text-decoration: none;
+
+}
+
+main>section:first-of-type img {
+	width: 100%;
+}
+/* section 2 */
+#b2 main section:nth-of-type(2) {
+	display: grid;
+	padding: 1rem;
+	margin-top: 0;
+	padding-top: 0;
+	background-color: var(--section2bg);
+}
+
+#b2 main section:nth-of-type(2) h2 {
+	padding-left: 1em;
+color: var(--section2h2);
+font-size: 1.5em;
+}
+
+#b2 main section:nth-of-type(2) ul {
+	display: grid;
+	list-style: none;
+	padding-left: 0;
+	gap: 0.5em;
+	border-radius: 6.188em;
+	margin-top: 0;
+	background-color: none;
+
+}
+#b2 main section:nth-of-type(2) ul li {
+	display: grid;
+	gap: 0.5em;
+	list-style: none;
+	padding-left: 0;
+	background-color: none;
+	padding: 0.5em;
+	padding-top: 0;
+	padding-bottom: 0;
+
+}
+#b2 main section:nth-of-type(2) ul li a{
+
+		justify-self: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--section2a);
+	color: var(--section2a);
+	width: 80%;
+	transition: all 0.3s ease;
+	margin-top: 0.1em;
+	text-decoration: none;
+
+}
+
+/* section 3 */
+#b2 main section:nth-of-type(3){
+	display: grid;
+	padding: 1rem;
+	margin-top: 0;
+	padding-top: 0;
+	text-align: center;
+}
+#b2 main section:nth-of-type(3) p:last-of-type{
+font-family:effrab, Arial, Helvetica, sans-serif;
+color: var(--section3bold);
+
+}
+#b2 main section:nth-of-type(3) p:first-of-type{
+
+color: var(--section3pcolor);
+
+}
+#b2 main section:nth-of-type(3) h2{
+justify-self: center;
+}
+
+#b2 main section:nth-of-type(3) h2{
+	font-size: 1.5em;
+	
+}
+/* section 4 */
+#b2 main section:nth-of-type(4) svg{
+width: 3em;
+height: 3em;
+stroke: var(--section3pcolor);
+justify-self: center;
+}
+#b2 main section:nth-of-type(4) ul{
+	display: grid;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 1em;
+}
+#b2 main section:nth-of-type(4) li{
+	list-style: none;
+	padding-left: 0;
+
+}
+#b2 main section:nth-of-type(4) h3{
+	font-size: 1.25em;
+	font-family:effra-medium, Arial, Helvetica, sans-serif;
+	color: var(--h3section4);
+	margin-top: 0;
+}
+
+#b2 main section:nth-of-type(4) button{
+	font-size: 0.5em;
+	color:var(--section4button) ;
+	padding: 0;
+	border: none;
+	background-color: none;
+}
+/* section 5 */
+#b2 main section:nth-of-type(5){
+text-align: center;
+} 
+#b2 main section:nth-of-type(5) h2{
+	font-size: 1.5em;
+	color: var(--section5h2);
+}
+#b2 main section:nth-of-type(5) p{
+	font-size: 1em;
+	color: var(--section5p);
+}
+/* section 6 */
+#b2 main section:nth-of-type(6){
+	display: grid;
+	gap: 0.5em;
+}
+#b2 main section:nth-of-type(6) ul{
+list-style: none;
+padding-left: 0;
+text-align: center;
+background-color: var(--section6bg);
+margin-top: 0;
+margin-bottom: 0;
+}
+#b2 main section:nth-of-type(6) ul li{
+	display: flex;
+	flex-direction: column-reverse;
+}
+#b2 main section:nth-of-type(6) h4{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.25em;
+	color: var(--section6h4);
+}
+#b2 main section:nth-of-type(6) p{
+	color: var(--section6p);
+}
+/* section  */
+#b2 main section:nth-of-type(7){
+text-align: center;
+margin-top: 1em;
+padding-bottom:0.5em ;
+}
+#b2 main section:nth-of-type(7) h5{
+	font-size: 1em;
+	color: var(--section7h2-p);
+	font-family: effra-regular, Arial, Helvetica, sans-serif;
+}
+#b2 main section:nth-of-type(7) p{
+	color: var(--section7h2-p);
+}
+#b2 main section:nth-of-type(7) button{
+	font-size: 0.5em;
+	color:var(--section4button) ;
+	padding: 0;
+	border: none;
+	background-color: none;
+}
+#b2 main section:nth-of-type(8){
+	background-color: var(--section8);
+	text-align: center;
+}
+#b2 main section:nth-of-type(8) h2{
+font-size: 1.5em;
+color: var(--section8h2);
+padding-top: 1em;
+}
+#b2 main section:nth-of-type(8) p{
+	font-size: 1em;
+	color:var(--sectipon8p) ;
+	padding-bottom: 2em;
+	margin-bottom: 0;
+}
+	
+#b2 main section:nth-of-type(9) a{
+	text-decoration: none;
+	color: var(--sectiona);
+	display: flex;
+}
+#b2 main section:nth-of-type(9) ul{
+	background-color: var(--section9bg);
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	gap: 1em;
+	
+
+}
+#b2 main section:nth-of-type(9) ul li>svg{
+	width: 6.5em;
+	grid-row:1 ;
+}
+#b2 main section:nth-of-type(9) ul li a svg{
+	width: 1em;
+	rotate: -90deg;
+	fill: var(--sectiona);
+}
+#b2 main section:nth-of-type(9) ul li{
+	display: grid;
+	margin-bottom: 1em;
+	background-color: var(--section9bg);
+}
+#b2 main section:nth-of-type(9) ul li h2{
+	font-size: 1.25em;
+	margin-bottom: 0;
+	color: var(--section9h2);
+}
+#b2 main section:nth-of-type(9) ul li p{
+	color: var(--section9p);
+}
+#b2 main section:nth-of-type(10){
+	background-color: var(--section10bg);
+	padding: 0.5em;
+	text-align: center;
+} 
+#b2 main section:nth-of-type(10) h6{
+	font-size: 1em;
+	font-family:effra-medium, Arial, Helvetica, sans-serif;
+}
+
+@media (width >= 34.375em) {
+	main>section:first-of-type {
+		padding: 1.5em 2em;
+		border-width: 1em 1em;
+		/* Sannes hulp */
+		grid-template-columns: max-content 1fr;
+	}
+
+	main>section:first-of-type *:not(a, button) {
+		grid-column: 1/-1;
+	}
+/* Sannes hulp */
+	main section:first-of-type a {
+		justify-self: start;
+		width: auto;
+		max-width: fit-content;
+		padding: 0.625em 1.75em;
+	}
+
+	main section:first-of-type button {
+		justify-self: start;
+		padding: 0.625em 1.75em;
+		max-width: fit-content;
+		
+		/* needs to be on the same grid space? */
+	}
+	main section:nth-of-type(2) h2 {
+		margin: 0;
+		margin-top: 0.5em;
+	}
+	main section:nth-of-type(2) > p{
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	main > section:nth-of-type(2) a{
+		justify-self: start;
+		padding: 0.625em 1.75em;
+		max-width: fit-content;
+	}
+
+	main section:nth-of-type(3) h2{
+	margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	main section:nth-of-type(3) li:first-of-type p{
+	margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 0em;
+	}
+	main > section:nth-of-type(3) li:first-of-type a {
+		justify-self: start;
+		width: auto;
+		max-width: fit-content;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		padding: 0.625em 1.75em;
+		margin-bottom: 1.5em;
+	}
+	main > section:nth-of-type(3) li:nth-of-type(2) {
+		margin-top: 1em;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		text-align: center;
+	}
+
+	main > section:nth-of-type(3) li:nth-of-type(2) p{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	main > section:nth-of-type(3) li:nth-of-type(2) a{
+		padding: 0.625em 1.75em;
+	}
+	main > section:nth-of-type(3) li:nth-of-type(3) p{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	main > section:nth-of-type(3) li:nth-of-type(3) h2{
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+	}
+	main section:nth-of-type(4) a{
+		padding: 0.625em 1.75em;
+	}
+	footer section:nth-of-type(2){
+	display: grid;
+	grid-template-columns:
+	1fr 1fr;
+	}
+}
+
+
+/* vershcillen aanpassen */
+@media (width >= 82.813em) {
+	header{
+		margin-left: 20vh;
+		margin-right: 20vh;
+	}
+	#nav-menu{
+		margin-right: 20vh;
+	}
+	main{
+		margin-left: 20vh;
+		margin-right: 20vh;
+	}
+	footer{
+		margin-left: 20vh;
+		margin-right: 20vh;
+	}
+}
+@media (width >= 40.25em) {
+	main>section:first-of-type {
+		padding: 1.5em 2em;
+		border-width: 1em 1em;
+	}	
+
+	main section:nth-of-type(2) ul {
+				
+		grid-template-columns:
+		1fr 1fr;
+
+	}
+
+	main section:nth-of-type(2) {
+		padding: 3em;
+
+	}
+
+}
+/* laptop en groter */
+@media (width >= 60.438em){
+	main>section:first-of-type {
+	padding: 0 1.5em 0 1.5em;
+	border-width: 3.5em 3.5em;
+	grid-template-columns:
+  1fr 1fr;
+  /* hulp van Sanne max-content */
+  grid-template-rows:repeat(4, max-content) 1fr;
+  align-items: start;
+}
+main section:nth-of-type(1) h2:first-of-type {
+	grid-column-end: inherit;
+}
+main section:nth-of-type(1) p:nth-of-type(2) {
+	grid-column-end: inherit;
+}
+main section:nth-of-type(1) a + button{
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+main section:nth-of-type(1) a{
+	margin-top: 0;
+}
+
+/* placing first section */
+main section:first-of-type h2{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+main section:first-of-type p{
+	grid-row-start: 3;
+	/* padding-left: 2.25em;
+	padding-right: 3em; */
+	padding-top: 0.5em;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+main section:first-of-type a{
+	grid-row-start: 4;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+main section:first-of-type button{
+	grid-row-start: 5;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+main section:first-of-type img{
+	grid-column-start:2 ;
+	grid-row-start: 1;
+	grid-row-end: 6;
+	justify-self: center;
+}
+main section:first-of-type{
+	padding-left: 2.25em;
+}
+/* secrtion 3 */
+main > section:nth-of-type(3) ul li:first-of-type{
+	display: grid;
+	grid-template-columns:
+  1fr 1fr;
+	margin-top: 1em;
+	padding-left:2em ;
+	padding-right: 2em;
+	align-self: center;
+	text-align: left;
+}
+main > section:nth-of-type(3)  ul li:first-of-type p:first-of-type{
+	grid-column-start:2 ;
+	grid-row-start: 2;
+	
+}
+main > section:nth-of-type(3)  ul li:first-of-type h4:first-of-type{
+	grid-column-start:2 ;
+	grid-row-start: 3;
+	
+}
+main > section:nth-of-type(3)  ul li:first-of-type h4:nth-of-type(2){
+	grid-column-start:2 ;
+	grid-row-start: 4;
+	
+}
+main > section:nth-of-type(3)  ul li:first-of-type a:nth-of-type(1){
+	grid-column-start:2 ;
+	grid-row-start: 5;
+	
+}
+main > section:nth-of-type(3)  ul li:first-of-type p:nth-of-type(2){
+	grid-column-start:2 ;
+	grid-row-start: 6;
+	
+}
+main > section:nth-of-type(3)  ul li:first-of-type img:first-of-type{
+	grid-column-start:1 ;
+	grid-row-start: 1;
+	grid-row-end: 7;
+	align-self: center;
+}
+/* section 3 2de li */
+main > section:nth-of-type(3) ul li:nth-of-type(3){
+	display: grid;
+	grid-template-columns:
+  1fr 1fr;
+	margin-top: 1em;
+	padding-left:2em ;
+	padding-right: 2em;
+	align-self: center;
+	text-align: left;
+}
+main > section:nth-of-type(3) ul li:nth-of-type(3) h2{
+	grid-column-start:2 ;
+	grid-row-start: 2;
+	margin-left: 5rem;
+	margin-right: 8rem;
+}
+main > section:nth-of-type(3) ul li:nth-of-type(3) img{
+	grid-column-start:1 ;
+	grid-row-start: 1;
+	max-width: 100%;
+	grid-row-start: 1;
+	grid-row-end: 6;
+}
+main > section:nth-of-type(3) ul li:nth-of-type(3) p{
+	grid-column-start:2 ;
+	grid-row-start: 3;
+	max-width: 100%;
+	margin-left: 5rem;
+	margin-right: 8rem;
+}
+main > section:nth-of-type(3) ul li:nth-of-type(3) a{
+	grid-column-start:2 ;
+	grid-row-start: 4;
+	justify-self: left;
+	margin-left: 5rem;
+
+}
+/* footer menu2 */
+footer section:nth-of-type(2){
+display: grid;
+grid-template-columns:
+  1fr 1fr 1fr 1fr;
+}
+footer section:last-of-type ul:nth-of-type(3) li img {
+	width: auto;
+}
+
+}
+/* meer custom proporties maken voor de dark modus (denk aan alle kleuren voor wat het word gebruikt.) */
+/* Alles van de main pagina zdt je in 1 style sheet de tweede pagina doe je in een ander
+en de derde style sheet is de algemene style sheet die toepassingen maakt in beide pagina,s */
