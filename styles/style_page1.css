@@ -2,6 +2,8 @@
 /* CSS fonts pagina 1 */
 /***********************/
 
+
+
 @font-face {
     font-family:effrab_i;
     src: url(../fonts/page1/effra-bold-italic.woff2);
@@ -205,10 +207,10 @@ main section:nth-of-type(2) {
 
 }
 main section:nth-of-type(2) ul li p{
-	color: var(--pc2);
+	color: var(--pnew);
 }
 h3{
-color: var(--h23);
+color: var(--h213);
 }
 @media (width >= 40.25em) {
 	main>section:first-of-type {
@@ -233,7 +235,7 @@ color: var(--h23);
 main section:nth-of-type(2) h2 {
 	justify-self: center;
 	text-align: center;
-color: var(--h23);
+color: var(--h213);
 }
 
 
@@ -272,7 +274,7 @@ main section:nth-of-type(2) ul li:last-of-type svg {
 
 main > section:nth-of-type(2) h2 + p{
 	text-align: center;
-	color: var(--pc2);
+	color: var(--poption2);
 }
 /* buttons */
 main > section:nth-of-type(2) a{
@@ -281,12 +283,13 @@ main > section:nth-of-type(2) a{
 	padding: 0.9em 2em;
 	cursor: pointer;
 	border-radius: 6.188em;
-	border: 2px solid var(--headerl2);
+	border: 2px solid var(--amega);
 	width: 80%;
 	transition: all 0.3s ease;
 	margin-top: 1em;
-	color: var(--headerl2);
+	color: var(--amega);
 	text-decoration: none;
+	background-color: var(--abgtest);
 	transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
 }
 main section:nth-of-type(2) ul li :where(h3, p, a, button) {
@@ -311,7 +314,7 @@ main section:nth-of-type(3){
 	padding: 1rem;
 	display: grid;
 	list-style: none;
-	background-color:white ;
+	background-color:var(--section3bgi) ;
 }
 main section:nth-of-type(3) ul{
 	list-style: none;
@@ -336,6 +339,7 @@ main section:nth-of-type(3) h4{
 	grid-template-rows: 0.75em;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	color: var(--h4p);
 }
 main section:nth-of-type(3) h4:nth-of-type(1){
 	margin-bottom: 1em;
@@ -343,12 +347,13 @@ main section:nth-of-type(3) h4:nth-of-type(1){
 main section:nth-of-type(3) h2{
 margin-left: 1rem;
 	margin-right: 0.75em;
-	color: var(--h23);
+	color: var(--h213);
 }
 main section:nth-of-type(3) p{
 margin-left: 1rem;
 	margin-right: 0.75em;
 	margin-top: 0em;
+	color: var(--h4p);
 }
 
 
@@ -432,7 +437,7 @@ margin-top: 0;
 main section:first-of-type h2 {
 font-size: 2em;
 margin-bottom: 0.5em;
-color: var(--bgc);
+color: var(--h213);
 }
 main section:first-of-type p:nth-of-type(2){
     margin-bottom: 0.5em;
@@ -441,7 +446,7 @@ main section:first-of-type p:nth-of-type(2){
 h2{
     font-size: 1.5em;
     font-family: "effra-medium", Arial, Helvetica, sans-serif;
-    color: var(--h23);
+    color: var(--h213);
 }
 main > section:nth-of-type(3) li:nth-of-type(3) h2{
 	font-size: 2em;
@@ -492,6 +497,7 @@ main > section:nth-of-type(3) li:nth-of-type(3) h2{
 	main section:nth-of-type(2) h2 {
 		margin: 0;
 		margin-top: 0.5em;
+		color: var(--h213);
 	}
 	main section:nth-of-type(2) > p{
 		padding-left: 0.5em;
@@ -626,8 +632,6 @@ main section:first-of-type h2{
 }
 main section:first-of-type p{
 	grid-row-start: 3;
-	/* padding-left: 2.25em;
-	padding-right: 3em; */
 	padding-top: 0.5em;
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -650,6 +654,10 @@ main section:first-of-type img{
 }
 main section:first-of-type{
 	padding-left: 2.25em;
+}
+header nav ul:nth-of-type(1) {
+	left: 30vh;
+	margin-right: 0;
 }
 /* secrtion 3 */
 main > section:nth-of-type(3) ul li:first-of-type{

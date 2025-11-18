@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
    * "Personal" dropdown button
    ********************************/
   // eerste button
-  const dropdownBtn  = nav.querySelector("button[aria-controls='nav-klein']") || nav.querySelector("button:nth-of-type(1)");
+  const dropdownBtn = nav.querySelector("button[aria-controls='nav-klein']") || nav.querySelector("button:nth-of-type(1)");
   const dropdownMenu = document.querySelector("#nav-menu");
 
   if (dropdownBtn && dropdownMenu) {
@@ -32,24 +32,25 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-//
+  //
   /********************************
    * "ul" dropdown button
    ********************************/
-  const menuBtn  = document.querySelector("#menu-btn");
-const menuList = document.querySelector("#nav-list");
+  const menuBtn = document.querySelector("#menu-btn");
+  const menuList = document.querySelector("#nav-list");
 
-if (menuBtn && menuList) {
-  // start closed
-  menuList.classList.remove("is-open");
-  menuBtn.setAttribute("aria-expanded", "false");
+  if (menuBtn && menuList) {
+    // start closed
+    menuList.classList.remove("is-open");
+    menuBtn.setAttribute("aria-expanded", "false");
 
-  menuBtn.addEventListener("click", () => {
-    // toggle class UL
-    const isOpen = menuList.classList.toggle("is-open");
-    
-    // update aria-expanded on the button
-    menuBtn.setAttribute("aria-expanded", String(isOpen));
-  });
-}
+    menuBtn.addEventListener("click", () => {
+      // toggle class ul
+      const isOpen = menuList.classList.toggle("is-open");
+
+      //aria-expanded
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
 });
+

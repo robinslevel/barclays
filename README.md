@@ -242,6 +242,5 @@ pagina 2 https://www.barclays.co.uk/loans/car-loans/
 7. sup html - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/sup
 8. flexbox - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container
 9. px to em - https://nekocalc.com/px-to-em-converter
-10. hulp gekregen van Sanne met het hiden van tekst en terug laten komen met css (media quiry)
-11. De menu openen en dichtdoen animatie en de hidden ul lukt niet echt om ze beide tegelijk tte laten doen.
+10. 
 </details>
